@@ -1,1 +1,322 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    color: #384047;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.top-heading {
+    background-color: #43464a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top-heading h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-container h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Adjust this value as needed */
+    margin-top: 5px;
+  
+  }
+  
+  
+  .sub-heading {
+      text-align: center;
+      color: #8a97a0;
+      margin-top: 0; /* Remove the default top margin */
+      margin-bottom: 30px; /* Adjust this value for spacing below the subheading */
+      font-size: .8rem;
+  }
+   
+
+  .horizontal-line-thicker {
+    width: calc(100% - 15px); /* Subtracting the total horizontal padding */
+    height: 4px;
+    background-color: #000000;
+    margin: 0 auto 5px; /* Center the line and add bottom margin */
+    padding: 0 5px; /* Add padding to create space on left and right */
+}
+
+.horizontal-line {
+    width: calc(100% - 15px); /* Subtracting the total horizontal padding */
+    height: 2px;
+    background-color: #000000;
+    margin: 0 auto; /* Center the line */
+    padding: 0 5px; /* Add padding to create space on left and right */
+}
+
+
+.form-container {
+    background:rgb(188, 234, 21);
+    max-width: 600px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-information {
+  
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: left;
+  border: 0;
+  padding: 30px 0 15px;
+
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label {
+    display: flex;                     /* Use flexbox to layout items */
+    justify-content: space-between;    /* Distribute space between label text and required text */
+    align-items: center;               /* Center items vertically */
+    margin-bottom: 8px;
+    position: relative;                /* Position relative for positioning */
+}
+
+.form-label {
+    font-size: 1rem; /* Adjust as needed */
+    color: #7d7d7d; /* Dark grey color */
+}
+
+
+
+
+.required-text {
+    font-size: 0.9em;                  /* Adjust font size if needed */
+    color: #8a97a0;                    /* Optional: color for the required text */
+    margin-left: auto;                 /* Push the required text to the right */
+    white-space: nowrap;               /* Prevent wrapping of the required text */
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 20px;
+}
+
+/* Add focus styles */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #52bab3;
+    box-shadow: 0 0 5px rgba(82, 186, 179, 0.5);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  margin: 0 16px 8px 0;
+
+}
+
+
+input {
+    text-align: left; /* Aligns user input to the left */
+}
+
+/* Add transitions for inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Transition for border and shadow */
+}
+
+/* Focus styles for inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #52bab3; /* Focus border color */
+    box-shadow: 0 0 5px rgba(82, 186, 179, 0.5); /* Focus shadow */
+}
+
+/* Add transitions for buttons */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Button transitions */
+}
+
+/* Button hover/focus effects */
+button:hover,
+button:focus {
+    background-color: #45a79e; /* Darker shade on hover/focus */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+
+/* Placeholder styling */
+input::placeholder {
+    text-align: right; /* Aligns placeholder text to the right */
+    font-style: italic;
+}
+
+
+#zip {
+    width: 50%;
+}
+
+
+/* Aligns the legend text with labels and sets specific styles */
+.newsletter-fieldset {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+    border: 0;
+    padding: 0;
+    margin-left: 0;
+    padding-top: 25px; /* Adds space above the "Newsletter" legend */
+}
+
+.newsletter-format {
+    font-weight: normal; /* Removes bold styling */
+    font-size: 1.1em;
+    text-align: left;
+    border: 0;
+    padding: 0;
+    margin-left: 0;
+    font-weight: 100;
+    color: #7d7d7d
+}
+
+/* Label alignment */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #7d7d7d;
+}
+
+label[for="otherTopics"], label[for="htmlNews"], label[for="cssNews"], label[for="jsNews"] {
+    font-size: 1rem; /* Makes specific label text smaller */
+    color: #7d7d7d;
+}
+
+/* Padding for the fieldset container */
+fieldset {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border: none;
+}
+
+/* Specific styles for radio and checkbox items alignment */
+fieldset div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+
+fieldset div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#other-topics-label {
+    font-size: .9rem; /* Change this value to your desired size */
+}
+
+textarea {
+    min-height: 80px;
+}
+
+button {
+    padding: 20px;
+    color: #FFF;
+    background-color: #52bab3;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 150px;
+}
+
+.footer p {
+color: #7d7d7d
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    label {
+        display: inline-block;
+        width: 30%;
+        text-align: left;
+        margin-right: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 60%;
+    }
+
+    #zip {
+        width: 25%;
+    }
+}
